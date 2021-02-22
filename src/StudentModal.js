@@ -8,7 +8,6 @@ import EditStudent from './EditStudent'
 
 const StudentModal = (props) => {
   const { student, students, toggle, open, editing } = props
-  const buttonText = editing ? "Save" : "Ok"
 
   return (
     <Modal isOpen={open} toggle={toggle}>

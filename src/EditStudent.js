@@ -9,6 +9,7 @@ import {
 } from 'reactstrap'
 import {capitalCase} from "change-case"
 import { useState } from 'react'
+import axios from 'axios'
 
 const EditStudent = ({student, toggle}) => {
   const [studentRecord, setStudentRecord] = useState(student)
@@ -16,6 +17,8 @@ const EditStudent = ({student, toggle}) => {
   const handleChange = (event) => {
     console.log(event.target)
     const input = event.target
+
+    // TODO: Fix this since is not updating the value
     setStudentRecord({...studentRecord, [input.name]: input.value })
   }
 
@@ -25,8 +28,7 @@ const EditStudent = ({student, toggle}) => {
     axios.patch(apiUrl, { studentRecord })
       .then((result) => {
         const students = result.data
-        setLoading(false)
-        setStudents(students)
+        // TODO: Setting the student record
     })
   }
 

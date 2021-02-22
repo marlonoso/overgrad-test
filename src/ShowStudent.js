@@ -32,7 +32,7 @@ const ShowStudent = ({student, toggle, students}) => {
           })
         }
       </ListGroup>
-      <Button color="secondary" className="float-right mt-3" onClick={toggle}>Ok</Button>
+      <Button color="primary" className="float-right mt-3" onClick={toggle}>Ok</Button>
       <Button className="float-left mt-3" onClick={() => handleStep(-1)}>Prev</Button>
       <Button className="float-left mt-3" onClick={() => handleStep(1)}>Next</Button>
     </>
