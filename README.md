@@ -32,6 +32,8 @@ You will also see any lint errors in the console.
 - Adding PropTypes and Default props
 - Better styling
 - Separating axios actions in a service object
+- Error handling in axios communication
+- Displaying a flash/toast message when saving
 - Actually editing the record, since is not happening
 - Enabling/Disabling Next and Prev buttons
 - Fixing console warnings
